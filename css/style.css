@@ -683,7 +683,7 @@ main {
   .card-left-img {
     width: 100%;
     padding: 10px;
-    height: 30%;
+    height: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -703,13 +703,14 @@ main {
     justify-content: center;
     color: #fff;
     font-family: Poppins;
-    width: 400px;
+    width: 409px;
+    height: 450px;
   }
 
   .card-right-description-background {
     background: #1f2937;
     width: 100%;
-    height: 70%;
+    height: 80%;
     border-bottom-left-radius: 15px;
 
     border-top-right-radius: 0px;
@@ -787,7 +788,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 333px;
+    height: 230px;
     margin-bottom: 10px;
     position: relative;
     justify-content: flex-start;
