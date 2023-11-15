@@ -563,11 +563,11 @@ main {
   }
 
   .projects {
-    width: 360px;
+    width: 500px;
   }
 
   .skills-tech {
-    width: 360px;
+    width: 400px;
   }
 
   .skills {
@@ -594,7 +594,7 @@ main {
     display: flex;
     background: #1f2937;
     min-height: 250px;
-    max-width: 340px;
+    max-width: 400px;
     padding: 40px;
     border-radius: 15px;
     color: #fff;
@@ -626,7 +626,7 @@ main {
     margin-left: 0px;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    width: 300px;
+    width: 400px;
   }
 
   .list-experience {
@@ -645,7 +645,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    min-height: 300px;
+    min-height: 400px;
     max-width: 100%;
     background-color: #02101b;
     align-items: center;
@@ -666,13 +666,19 @@ main {
 
   .card-work-project {
     height: 610px;
-    width: 320px;
+    width: 400px;
     display: flex;
     background: #374151;
     border-radius: 15px;
     margin-bottom: 0rem;
     flex-direction: column;
   }
+
+  .img-project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 
   .card-left-img {
     width: 100%;
@@ -686,7 +692,7 @@ main {
 
   .card-left-img img {
     width: 300px;
-    border-radius: 15px;
+    border-radius: 10px;
   }
 
   .card-right-description {
@@ -697,6 +703,7 @@ main {
     justify-content: center;
     color: #fff;
     font-family: Poppins;
+    width: 400px;
   }
 
   .card-right-description-background {
@@ -714,15 +721,16 @@ main {
   .tech-project {
     display: flex;
     gap: 0.5rem;
-    width: 270px;
+    width: 300px;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    justify-content: center;
   }
 
   .description-project {
     margin-bottom: 20px;
     font-size: 0.7rem;
-    width: 280px;
+    width: 300px;
   }
 
   .projects {
@@ -731,7 +739,7 @@ main {
 
   .about-me-profile {
     height: 100%;
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -752,7 +760,7 @@ main {
     font-family: Poppins;
     font-size: 0.9rem;
     line-height: 1.5rem;
-    width: 310px;
+    width: 400px;
     margin-bottom: 10px;
   }
 
@@ -816,7 +824,7 @@ main {
   flex-direction: column;
   justify-content: center;
   min-height: 400px;
-  width: 340px;
+  width: 400px;
   line-height: 1.9;
   position: relative;
   top: 0;
