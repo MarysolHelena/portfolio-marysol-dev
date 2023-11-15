@@ -616,7 +616,7 @@ main {
     font-size: 0.775rem;
     list-style-type: disc;
     margin-bottom: 1rem;
-    max-width: 270px;
+    width: 330px;
     font-family: Poppins;
   }
 
@@ -626,7 +626,7 @@ main {
     margin-left: 0px;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    width: 400px;
+    width: 330px;
   }
 
   .list-experience {
@@ -672,6 +672,7 @@ main {
     border-radius: 15px;
     margin-bottom: 0rem;
     flex-direction: column;
+    margin-bottom: 5rem;
   }
 
   .img-project {
