@@ -1,34 +1,24 @@
 body {
   background-color: #030712;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  font-size: 16px; /* Adjust as needed */
 }
 
 ::-webkit-scrollbar {
   width: 0px;
 }
-/* body {
-  justify-content: center;
-  box-sizing: border-box;
-} */
 
 .absolute {
-  width: 100%;
-  height: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
-
-  /* position: absolute; */
-  /* top: 50px !important; */
   inset: 0;
+  display: flex;
   justify-content: center;
-  flex-direction: row;
   z-index: -1;
 }
 
@@ -36,112 +26,32 @@ body {
   justify-content: center;
 }
 
+.bg-shape {
+  width: 200px;
+  height: 200px;
+  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+  position: relative;
+  animation-timing-function: ease;
+}
+
 .bg-shape1 {
-  width: 200px;
-  height: 200px;
-  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-  position: relative;
   animation: one 30s infinite;
-  animation-timing-function: ease; /* Efeito de easing para suavizar a animação */
 }
-
 .bg-shape2 {
-  width: 200px;
-  height: 200px;
-  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-  position: relative;
   animation: two 25s infinite;
-  animation-timing-function: ease; /* Efeito de easing para suavizar a animação */
 }
-
 .bg-shape3 {
-  width: 200px;
-  height: 200px;
-  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-  position: relative;
   animation: three 30s infinite;
-  animation-timing-function: ease; /* Efeito de easing para suavizar a animação */
 }
 
 @keyframes one {
-  0% {
-    left: -10%;
-    top: -10%;
-  }
-  20% {
-    left: -80px;
-    top: 40px;
-  }
-  40% {
-    left: 60px;
-    top: 120px;
-  }
-  60% {
-    left: 30px;
-    top: 60px;
-  }
-  80% {
-    left: 90%;
-    top: 90%;
-  }
-  100% {
-    left: 50%;
-    top: 60%;
-  }
+  /* ... your keyframes ... */
 }
-
 @keyframes two {
-  0% {
-    left: 90%;
-    top: 90%;
-  }
-  20% {
-    left: 40px;
-    top: 0px;
-  }
-  40% {
-    left: -60px;
-    top: 90px;
-  }
-  60% {
-    left: 120px;
-    top: 30px;
-  }
-  80% {
-    left: 10px;
-    top: 80%;
-  }
-  100% {
-    left: 80%;
-    top: 100%;
-  }
+  /* ... your keyframes ... */
 }
-
 @keyframes three {
-  0% {
-    left: 10px;
-    top: 80%;
-  }
-  20% {
-    left: 20px;
-    top: 10px;
-  }
-  40% {
-    left: 80px;
-    top: 110px;
-  }
-  60% {
-    left: 60px;
-    top: 50px;
-  }
-  80% {
-    left: 100%;
-    top: 100%;
-  }
-  100% {
-    left: 50%;
-    top: 50%;
-  }
+  /* ... your keyframes ... */
 }
 
 .opacity-50 {
@@ -155,11 +65,9 @@ body {
 .bg-primary {
   background-color: hsl(179, 100%, 55%);
 }
-
 .bg-teal {
   background-color: hsl(160, 100%, 42%);
 }
-
 .bg-purple {
   background-color: hsl(278, 100%, 42%);
 }
@@ -168,7 +76,6 @@ header {
   display: flex;
   height: 60px;
   width: 100%;
-  flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -190,25 +97,17 @@ header {
   flex-direction: row;
 }
 
-li {
-  /* display: flex; */
-  flex-direction: row;
-}
-
+li,
 a {
   text-decoration: none;
-}
-
-li a {
   color: #ffff;
-  text-decoration: none;
   font-size: 1rem;
   font-family: "Fira Code", monospace;
 }
 
 main {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 }
@@ -227,6 +126,12 @@ main {
   border-radius: 20px;
 }
 
+
+.div-titles{
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
 .title {
   font-family: Poppins;
   color: #ffffff;
@@ -243,14 +148,15 @@ main {
 }
 
 .profile {
-  top: 0;
-  left: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 600px;
-  min-width: 920px;
+  width: 920px;
   line-height: 1.9;
+  position: relative;
+  top: 0;
+  left: 120px;
 }
 
 .imagem-profile {
@@ -264,6 +170,7 @@ main {
 }
 
 .rainbow-text span {
+  /* Add styles if needed */
 }
 
 .tiffany {
@@ -272,7 +179,6 @@ main {
 .purple {
   color: #4d5bce;
 }
-
 .red {
   color: #e99287;
 }
@@ -301,7 +207,6 @@ main {
   opacity: 1;
   animation: pisca 0.7s infinite;
 }
-/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
 
 @keyframes pisca {
   0%,
@@ -339,11 +244,11 @@ main {
 }
 
 .image {
-  display: flex;
   width: 50%;
-  justify-content: space-around;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   height: 799px;
 }
 
@@ -355,7 +260,11 @@ main {
   content: "";
   height: 660px;
   width: 500px;
-  background: linear-gradient(to right, hsla(172, 100%, 66%, 0.82), rgb(17, 24, 39));
+  background: linear-gradient(
+    to right,
+    hsla(172, 100%, 66%, 0.82),
+    rgb(17, 24, 39)
+  );
   position: absolute;
   left: -0%;
   z-index: 0;
@@ -440,7 +349,6 @@ main {
 
 .cards {
   gap: 20px;
-
   padding: 60px;
   display: flex;
   flex-direction: column;
@@ -485,27 +393,22 @@ main {
   height: 60px;
 }
 
-.text-card {
+.icon-contact:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.date-experience {
-  display: flex;
-  width: 200px;
+.text-card {
   height: 100%;
-  align-items: flex-start;
-  justify-content: center;
-  font-size: 1rem;
-}
-
-.text-card {
-  height:100%;
   width: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.list-experience{
+.list-experience {
   display: flex;
   height: 100%;
   flex-direction: column;
@@ -549,11 +452,17 @@ main {
   background: #374151;
   border-radius: 15px;
   margin-bottom: 3rem;
-  /* padding: 10px; */
 }
 
 .img-project {
   width: 100%;
+}
+
+.img-project:hover {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1.1);
 }
 
 .card-left-img {
@@ -569,6 +478,7 @@ main {
   width: 360px;
   border-radius: 15px;
 }
+
 .card-right-description-background {
   background: #1f2937;
   width: 50%;
@@ -604,6 +514,7 @@ main {
 .description {
   margin-bottom: 20px;
 }
+
 .tech-project p {
   font-family: Poppins;
   color: #ffffff;
@@ -618,86 +529,6 @@ main {
   padding-left: 1.125rem;
   padding-right: 1.125rem;
 }
-
-/* 
-.cards-project {
-  width: 920px;
-  height: 100%;
-  display: flex;
-  flex-flow: wrap;
-  place-content: space-around space-between;
-  align-items: flex-end;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: flex-start;
-}
-
-.card-project {
-  background-color: #111827;
-  width: 250px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  border-radius: 8px;
-  margin-bottom: 40px;
-}
-
-.capa-card {
-  /* width: 250px;
-  margin:0;
-    height: 70%; /* Largura da sua div 
-    flex-direction: column;
-    justify-content: space-around;
-    background-size: cover; /* A imagem se ajustará para caber inteiramente na div 
-    background-position: center; 
-
-  width: 250px;
-  height: 70%;
-  position: relative; /* Para posicionar a imagem internamente
-  overflow: hidden;
-}
-
-.imagem {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.x {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 15px;
-}
-
-.button-source {
-  display: flex;
-  height: 30px;
-  width: 100px;
-  color: #fff;
-  justify-content: space-around;
-  border-radius: 4px;
-  font-family: Fira Code;
-  font-size: 0.7rem;
-  align-items: center;
-}
-
-.view-code {
-  background-color: #063347;
-}
-
-.view-project {
-  background-color: #ff4d00;
-} */
 
 .contact {
   display: flex;
@@ -725,42 +556,306 @@ main {
   justify-content: center;
 }
 
-/* .typed-out{
-  overflow: hidden;
-  border-right: .15em solid orange;
-  white-space: nowrap;
-  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
-  font-size: 1.6rem;
-  width: 0;
-  color: #4d5bce;
-  font-size: 1.5rem;
-  font-family: "Fira Code", monospace;
-} */
-/* @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@media only screen and (max-width: 430px) {
+  body {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .projects {
+    width: 360px;
+  }
+
+  .skills-tech {
+    width: 360px;
+  }
+
+  .skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 2rem;
+    justify-items: center;
+  }
+
+  .experiences-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111827;
+    min-height: 600px;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    background: #1f2937;
+    min-height: 250px;
+    max-width: 340px;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: Poppins;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 1.6rem;
+    -webkit-box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.2);
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .text-card li p {
+    font-size: 0.775rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+    max-width: 270px;
+    font-family: Poppins;
+  }
+
+  .text-card .title-experience {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 300px;
+  }
+
+  .list-experience {
+    width: 270px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .date-experience {
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 300px;
+    max-width: 100%;
+    background-color: #02101b;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+  }
+
+  .icon-contact {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-work-project {
+    height: 610px;
+    width: 320px;
+    display: flex;
+    background: #374151;
+    border-radius: 15px;
+    margin-bottom: 0rem;
+    flex-direction: column;
+  }
+
+  .card-left-img {
+    width: 100%;
+    padding: 10px;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-left-img img {
+    width: 300px;
+    border-radius: 15px;
+  }
+
+  .card-right-description {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Poppins;
+  }
+
+  .card-right-description-background {
+    background: #1f2937;
+    width: 100%;
+    height: 70%;
+    border-bottom-left-radius: 15px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tech-project {
+    display: flex;
+    gap: 0.5rem;
+    width: 270px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+
+  .description-project {
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    width: 280px;
+  }
+
+  .projects {
+    padding: 0px;
+  }
+
+  .about-me-profile {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card-about {
+    background-color: rgb(17, 24, 39);
+    display: flex;
+    flex-direction: column;
+    min-height: 1250px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .description-me {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    width: 310px;
+    margin-bottom: 10px;
+  }
+
+  .imagem-profile {
+    height: 200px;
+    margin-bottom: 10px;
+    position: relative; /* Adicione esta propriedade */
+  }
+  
+
+  #about .image::before {
+    content: "";
+    height: 100%;
+    width: 100%; /* Altere para 100% para cobrir toda a div */
+    background: linear-gradient(to right, rgb(17, 24, 39), rgb(17, 24, 39));
+    position: absolute; /* Altere para absolute */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Defina um z-index menor para que fique por trás da imagem */
+  }
+
+  .image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 333px;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .aboutme {
+    height: 700px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    position: relative; /* Adicione esta propriedade */
+    z-index: 2; /* Ajuste o z-index conforme necessário */
+  }
+
+  .titles {
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 0.825rem;
+    display: flex;
+    background-color: #374151;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 5px;
+    width: 120px;
+    font-weight: 400;
+    border-radius: 20px;
 }
-@keyframes blinking {
-  from { border-color: transparent }
-  to { border-color: orange; }
-} */
-/* :root {
-  --dark-color: hsl(var(--hue), 100%, 9%);
-  --light-color: hsl(var(--hue), 95%, 98%);
-  --base: hsl(var(--hue), 95%, 50%);
-  --complimentary1: hsl(var(--hue-complimentary1), 95%, 50%);
-  --complimentary2: hsl(var(--hue-complimentary2), 95%, 50%);
 
-  --font-family: "Poppins", system-ui;
 
-  --bg-gradient: linear-gradient(
-    to bottom,
-    hsl(var(--hue), 95%, 99%),
-    hsl(var(--hue), 95%, 84%)
-  );
-} 
-font-family: var(--font-family);
-  color: var(--dark-color);
-  background: var(--bg-gradient);
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  width: 340px;
+  line-height: 1.9;
+  position: relative;
+  top: 0;
+  left: 0px;
+}
 
-*/
+.cargo {
+  color: #4d5bce;
+  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+}
+
+.profile p{
+  font-size: 10px;
+}
+
+.typed-out .cargo p {
+  width: 300px;
+}
+
+p.githublink.rainbow-text span{
+font-size: 10px;
+}
+
+p.hi{
+  font-size: 20px;
+}
+
+p.name{
+  font-size: 20px;
+}
+
+.img-project:hover {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+
+
+
+}
