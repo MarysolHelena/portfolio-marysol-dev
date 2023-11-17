@@ -796,7 +796,7 @@ main {
   .description-me {
     color: #fff;
     font-family: Poppins;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.5rem;
     width: 350px;
     margin-bottom: 10px;
@@ -952,7 +952,7 @@ p.name{
     display: flex;
     background: #1f2937;
     min-height: 250px;
-    max-width: 390px;
+    max-width: 350px;
     padding: 40px;
     border-radius: 15px;
     color: #fff;
@@ -971,11 +971,12 @@ p.name{
   }
 
   .text-card li p {
-    font-size: 0.775rem;
+    font-size: 0.7rem;
     list-style-type: disc;
     margin-bottom: 1rem;
-    width: 330px;
-    font-family: Poppins;
+    width: 290px;
+    font-family: Poppins; 
+    padding:10px;
   }
 
   .text-card .title-experience {
@@ -1118,7 +1119,7 @@ p.name{
   .description-me {
     color: #fff;
     font-family: Poppins;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     line-height: 1.5rem;
     width: 350px;
     margin-bottom: 10px;
@@ -1228,5 +1229,7 @@ p.name{
   -o-transform: none;
   transform: none;
 }
+
+
 
 }
