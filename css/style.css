@@ -423,9 +423,11 @@ main {
 }
 
 .text-card li p {
+  font-family: 'Poppins';
   font-size: 0.775rem;
   list-style-type: disc;
   margin-bottom: 1rem;
+  
 }
 
 .description-me {
