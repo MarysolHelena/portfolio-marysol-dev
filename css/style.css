@@ -1,5 +1,15 @@
+:root {
+  --background-color: #030712;
+  --primary-color: #ffffff;
+  --secondary-color: #374151;
+  --accent-color: #43d9ad;
+  --highlight-color: #4d5bce;
+  --error-color: #e99287;
+  --text-color: #fff;
+}
+
 body {
-  background-color: #030712;
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,64 +24,6 @@ body {
   width: 0px;
 }
 
-.absolute {
-  position: fixed;
-  inset: 0;
-  display: flex;
-  justify-content: center;
-  z-index: -1;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.bg-shape {
-  width: 200px;
-  height: 200px;
-  border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-  position: relative;
-  animation-timing-function: ease;
-}
-
-.bg-shape1 {
-  animation: one 30s infinite;
-}
-.bg-shape2 {
-  animation: two 25s infinite;
-}
-.bg-shape3 {
-  animation: three 30s infinite;
-}
-
-@keyframes one {
-  /* ... your keyframes ... */
-}
-@keyframes two {
-  /* ... your keyframes ... */
-}
-@keyframes three {
-  /* ... your keyframes ... */
-}
-
-.opacity-50 {
-  opacity: 0.7;
-}
-
-.bg-blur {
-  filter: blur(100px);
-}
-
-.bg-primary {
-  background-color: hsl(179, 100%, 55%);
-}
-.bg-teal {
-  background-color: hsl(160, 100%, 42%);
-}
-.bg-purple {
-  background-color: hsl(278, 100%, 42%);
-}
-
 header {
   display: flex;
   height: 60px;
@@ -80,14 +32,10 @@ header {
   align-items: center;
 }
 
-.navigation {
-  width: 40%;
-}
-
 .logo {
   font-size: 1rem;
   font-family: "Fira Code", monospace;
-  color: #ffff;
+  color: var(--primary-color);
   font-weight: 100;
 }
 
@@ -100,7 +48,7 @@ header {
 li,
 a {
   text-decoration: none;
-  color: #ffff;
+  color: var(--primary-color);
   font-size: 1rem;
   font-family: "Fira Code", monospace;
 }
@@ -126,8 +74,7 @@ main {
   border-radius: 20px;
 }
 
-
-.div-titles{
+.div-titles {
   display: flex;
   height: 100px;
   align-items: center;
@@ -423,11 +370,10 @@ main {
 }
 
 .text-card li p {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 0.775rem;
   list-style-type: disc;
   margin-bottom: 1rem;
-  
 }
 
 .description-me {
@@ -559,11 +505,12 @@ main {
 }
 
 
-@media only screen and (max-width:1100px) {
-
-  .card-about{
-    width:1100px;
+/* ================================================================================== */
+@media only screen and (max-width: 1100px) {
+  .card-about {
+    width: 1100px;
   }
+
   .about-me-profile {
     height: 100%;
     width: 900px;
@@ -571,39 +518,39 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
   }
 
-  .imagem-profile{
-    height:400px;
-
+  .imagem-profile {
+    height: 400px;
   }
 
   #about .image::before {
     content: "";
     height: 500px;
     width: 400px;
-    background: linear-gradient( to right, hsla(172, 100%, 20%, 0.82), rgb(17, 24, 39) );
+    background: linear-gradient(
+      to right,
+      hsla(172, 100%, 20%, 0.82),
+      rgb(17, 24, 39)
+    );
     position: absolute;
     left: -0%;
     z-index: 0;
   }
-
 }
 
-@media only screen and (max-width: 700px){
-
+@media only screen and (max-width: 700px) {
   body {
     display: flex;
     max-width: 100%;
   }
 
   .projects {
-    width: 412px;
+    width: 100%;
   }
 
   .skills-tech {
-    width: 400px;
+    width: 100%;
   }
 
   .skills {
@@ -715,7 +662,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-}
+  }
 
   .card-left-img {
     width: 100%;
@@ -807,7 +754,6 @@ main {
     margin-bottom: 10px;
     position: relative; /* Adicione esta propriedade */
   }
-  
 
   #about .image::before {
     content: "";
@@ -854,67 +800,60 @@ main {
     width: 120px;
     font-weight: 400;
     border-radius: 20px;
+  }
+
+  .title {
+    width: 350px;
+    margin-top: 5rem;
+  }
+
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    width: 350px;
+    line-height: 1.9;
+    position: relative;
+    top: 0;
+    left: 0px;
+  }
+
+  .cargo {
+    color: #4d5bce;
+    font-size: 1rem;
+    font-family: "Fira Code", monospace;
+  }
+
+  .profile p {
+    font-size: 10px;
+  }
+
+  .typed-out .cargo p {
+    width: 300px;
+  }
+
+  p.githublink.rainbow-text span {
+    font-size: 10px;
+  }
+
+  p.hi {
+    font-size: 20px;
+  }
+
+  p.name {
+    font-size: 20px;
+  }
+
+  .img-project:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
 }
 
-.title{
-  width: 350px;
-  margin-top: 5rem;
-}
-
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 400px;
-  width: 350px;
-  line-height: 1.9;
-  position: relative;
-  top: 0;
-  left: 0px;
-}
-
-.cargo {
-  color: #4d5bce;
-  font-size: 1rem;
-  font-family: "Fira Code", monospace;
-}
-
-.profile p{
-  font-size: 10px;
-}
-
-.typed-out .cargo p {
-  width: 300px;
-}
-
-p.githublink.rainbow-text span{
-font-size: 10px;
-}
-
-p.hi{
-  font-size: 20px;
-}
-
-p.name{
-  font-size: 20px;
-}
-
-.img-project:hover {
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-
-
-
-}
-
-
-
-@media only screen and (max-width:480px) {
-
+@media only screen and (max-width: 480px) {
   body {
     display: flex;
     max-width: 100%;
@@ -975,8 +914,8 @@ p.name{
     list-style-type: disc;
     margin-bottom: 1rem;
     width: 290px;
-    font-family: Poppins; 
-    padding:10px;
+    font-family: Poppins;
+    padding: 10px;
   }
 
   .text-card .title-experience {
@@ -1038,7 +977,7 @@ p.name{
     width: 100%;
     display: flex;
     justify-content: center;
-}
+  }
 
   .card-left-img {
     width: 100%;
@@ -1130,7 +1069,6 @@ p.name{
     margin-bottom: 10px;
     position: relative; /* Adicione esta propriedade */
   }
-  
 
   #about .image::before {
     content: "";
@@ -1177,59 +1115,55 @@ p.name{
     width: 120px;
     font-weight: 400;
     border-radius: 20px;
-}
+  }
 
-.title{
-  width: 350px;
-  margin-top: 5rem;
-}
+  .title {
+    width: 350px;
+    margin-top: 5rem;
+  }
 
+  .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    width: 350px;
+    line-height: 1.9;
+    position: relative;
+    top: 0;
+    left: 0px;
+  }
 
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 400px;
-  width: 350px;
-  line-height: 1.9;
-  position: relative;
-  top: 0;
-  left: 0px;
-}
+  .cargo {
+    color: #4d5bce;
+    font-size: 1rem;
+    font-family: "Fira Code", monospace;
+  }
 
-.cargo {
-  color: #4d5bce;
-  font-size: 1rem;
-  font-family: "Fira Code", monospace;
-}
+  .profile p {
+    font-size: 10px;
+  }
 
-.profile p{
-  font-size: 10px;
-}
+  .typed-out .cargo p {
+    width: 300px;
+  }
 
-.typed-out .cargo p {
-  width: 300px;
-}
+  p.githublink.rainbow-text span {
+    font-size: 10px;
+  }
 
-p.githublink.rainbow-text span{
-font-size: 10px;
-}
+  p.hi {
+    font-size: 20px;
+  }
 
-p.hi{
-  font-size: 20px;
-}
+  p.name {
+    font-size: 20px;
+  }
 
-p.name{
-  font-size: 20px;
-}
-
-.img-project:hover {
-  -webkit-transform: none;
-  -moz-transform: none;
-  -o-transform: none;
-  transform: none;
-}
-
-
-
+  .img-project:hover {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
 }
