@@ -738,7 +738,7 @@ main {
   }
 
   .projects {
-    padding: 0px;
+    padding: 60px;
   }
 
   .about-me-profile {
@@ -757,6 +757,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+    padding: 60px;
   }
 
   .description-me {
@@ -861,6 +862,11 @@ p.name{
   font-size: 20px;
 }
 
+.title{
+  width: 350px;
+  margin-top: 5rem;
+}
+
 .img-project:hover {
   -webkit-transform: scale();
   -moz-transform: scale(0);
@@ -869,5 +875,329 @@ p.name{
 }
 
 
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:420px) {
+
+  body {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .projects {
+    width: 412px;
+  }
+
+  .skills-tech {
+    width: 400px;
+  }
+
+  .skills {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap: 2rem;
+    justify-items: center;
+  }
+
+  .experiences-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111827;
+    min-height: 600px;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    background: #1f2937;
+    min-height: 250px;
+    max-width: 390px;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: Poppins;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 1.6rem;
+    -webkit-box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 12px -6px rgba(0, 0, 0, 0.2);
+  }
+
+  .cards {
+    width: 100%;
+  }
+
+  .text-card li p {
+    font-size: 0.775rem;
+    list-style-type: disc;
+    margin-bottom: 1rem;
+    width: 330px;
+    font-family: Poppins;
+  }
+
+  .text-card .title-experience {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 330px;
+  }
+
+  .list-experience {
+    width: 270px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .date-experience {
+    font-size: 0.8rem;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 400px;
+    max-width: 100%;
+    background-color: #02101b;
+    align-items: center;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 360px;
+  }
+
+  .icon-contact {
+    width: 30px;
+    height: 30px;
+  }
+
+  .card-work-project {
+    height: 610px;
+    width: 400px;
+    display: flex;
+    background: #374151;
+    border-radius: 15px;
+    margin-bottom: 0rem;
+    flex-direction: column;
+    margin-bottom: 5rem;
+  }
+
+  .img-project {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+  .card-left-img {
+    width: 100%;
+    padding: 10px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-left-img img {
+    width: 300px;
+    border-radius: 10px;
+  }
+
+  .card-right-description {
+    display: flex;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Poppins;
+    width: 409px;
+    height: 450px;
+  }
+
+  .card-right-description-background {
+    background: #1f2937;
+    width: 100%;
+    height: 80%;
+    border-bottom-left-radius: 15px;
+
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tech-project {
+    display: flex;
+    gap: 0.5rem;
+    width: 300px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+
+  .description-project {
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+    width: 300px;
+  }
+
+  .projects {
+    padding: 0px;
+  }
+
+  .about-me-profile {
+    height: 100%;
+    width: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .card-about {
+    background-color: rgb(17, 24, 39);
+    display: flex;
+    flex-direction: column;
+    min-height: 1250px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .description-me {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
+  .imagem-profile {
+    height: 200px;
+    margin-bottom: 10px;
+    position: relative; /* Adicione esta propriedade */
+  }
+  
+
+  #about .image::before {
+    content: "";
+    height: 100%;
+    width: 100%; /* Altere para 100% para cobrir toda a div */
+    background: linear-gradient(to right, rgb(17, 24, 39), rgb(17, 24, 39));
+    position: absolute; /* Altere para absolute */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Defina um z-index menor para que fique por trás da imagem */
+  }
+
+  .image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+    margin-bottom: 10px;
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  .aboutme {
+    height: 700px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 2; /* Ajuste o z-index conforme necessário */
+  }
+
+  .titles {
+    font-family: Poppins;
+    color: #ffffff;
+    font-size: 0.825rem;
+    display: flex;
+    background-color: #374151;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 5px;
+    width: 120px;
+    font-weight: 400;
+    border-radius: 20px;
+}
+
+.title{
+  width: 350px;
+  margin-top: 5rem;
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  width: 350px;
+  line-height: 1.9;
+  position: relative;
+  top: 0;
+  left: 0px;
+}
+
+.cargo {
+  color: #4d5bce;
+  font-size: 1rem;
+  font-family: "Fira Code", monospace;
+}
+
+.profile p{
+  font-size: 10px;
+}
+
+.typed-out .cargo p {
+  width: 300px;
+}
+
+p.githublink.rainbow-text span{
+font-size: 10px;
+}
+
+p.hi{
+  font-size: 20px;
+}
+
+p.name{
+  font-size: 20px;
+}
+
+.img-project:hover {
+  -webkit-transform: scale();
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
 
 }
